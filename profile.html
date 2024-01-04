@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Sayfası</title>
+    <link rel="stylesheet" href="/sytle.css" />
+  </head>
+  <body>
+    <!----Navbar---->
+
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="/index.html" class="logo"><img src="/images/logo.png" /></a>
+        <div class="search-box">
+          <img src="/images/search.png" alt="" />
+          <input type="text" placeholder="Arama Yap" />
+        </div>
+      </div>
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active-link"
+              ><img src="/images/home.png" /><span>Ana Sayfa</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><img src="/images/network.png" /><span>Ağım</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/images/jobs.png" /><span>İş İlanları</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/images/message.png" /><span>Mesajlaşma</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="/images/notification.png" /><span>Bildirimler</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img
+            src="/images/user-1.png"
+            class="nav-profile-img"
+            onclick="toggleMenu()"
+          />
+        </div>
+      </div>
+
+      <!--dropdown menü-->
+
+      <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="/images/user-1.png" alt="" />
+            <div>
+              <h3>Fatih Canbay</h3>
+              <a href="profile.html">Profilini Görüntüle</a>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="profile-menu-link">
+            <img src="/images/feedback.png" alt="" />
+            <p>Geri Bildirimde Bulun</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="/images/setting.png" alt="" />
+            <p>Ayarlar</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="/images/help.png" alt="" />
+            <p>Yardım</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="/images/display.png" alt="" />
+            <p>Karanlık Mod</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-menu-link">
+            <img src="/images/logout.png" alt="" />
+            <p>Çıkış</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="profile-main">
+        <div class="profile-container">
+          <img src="/images/cover-pic.png" width="100%" />
+          <div class="profile-container-inner">
+            <img src="/images/user-1.png" class="profile-pic" />
+            <h1>Fatih Canbay</h1>
+            <b>React Developer - Frontend Developer</b>
+            <p>Ankara, Türkiye &middot; <a href="#">İletişim Bilgileri</a></p>
+            <div class="mutual-connection">
+              <img src="/images/user-2.png" alt="" />
+              <span>99 Bağlantı: Orlando D.</span>
+            </div>
+            <div class="profile-btn">
+              <a href="#" class="primary-btn"
+                ><img src="/images/connect.png" alt="" />Bağlantı Kur</a
+              >
+              <a href="#"><img src="/images/chat.png" alt="" />Mesaj</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-description">
+          <h2>Hakkında</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            delectus placeat expedita, magnam eius aspernatur itaque! Illo quod
+            non repellat harum aut reiciendis perferendis voluptatibus officiis
+            nisi, minus voluptatem dolores!
+          </p>
+          <a href="#" class="see-more-link">Daha Fazlası..</a>
+        </div>
+
+        <div class="profile-description">
+          <h2>Deneyim</h2>
+          <div class="profile-desc-row">
+            <img src="/images/microsoft.png" alt="" />
+            <div>
+              <h3>Lead Front-End Developer</h3>
+              <b>Microsoft &middot; Full-time</b>
+              <b>Feb-2021 - Present &middot; 1.5 years</b>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="/images/slack.png" alt="" />
+            <div>
+              <h3>Full Stack Developer</h3>
+              <b>Slack &middot; Full-time</b>
+              <b>June 2018 - Jan 2021 &middot; 2.6 years</b>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="/images/google.png" alt="" />
+            <div>
+              <h3>Web Developer</h3>
+              <b>Google Inc &middot; Full-time</b>
+              <b>Sebt 2015 - May 2018 &middot; 2.8 years</b>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+          <hr />
+          <a href="#" class="experience-link"
+            >Diğer Tüm Deneyimleri Göster
+            <img src="/images/right-arrow.png" alt=""
+          /></a>
+        </div>
+        <div class="profile-description">
+          <h2>Eğitim</h2>
+          <div class="profile-desc-row">
+            <img src="/images/stanford.png" alt="" />
+            <div>
+              <h3>Stanford University</h3>
+              <b>BSEE, Electrical Engineer</b>
+              <b>2018 - 2022</b>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="/images/north.png" alt="" />
+            <div>
+              <h3>Nortwestern University</h3>
+              <b>Computer Science</b>
+              <b>2015 - 2018</b>
+              <hr />
+            </div>
+          </div>
+          <div class="profile-desc-row">
+            <img src="/images/mit.png" alt="" />
+            <div>
+              <h3>Harvard University</h3>
+              <b>Senior High School</b>
+              <b>2005 - 2015</b>
+            </div>
+          </div>
+        </div>
+        <div class="profile-description">
+          <h2>Yetenekler</h2>
+          <a href="#" class="skills-btn">Liderlik</a>
+          <a href="#" class="skills-btn">Web Design</a>
+          <a href="#" class="skills-btn">Development</a>
+          <a href="#" class="skills-btn">İletişim</a>
+          <a href="#" class="skills-btn">Planlama</a>
+          <a href="#" class="skills-btn">Yazılım</a>
+          <a href="#" class="skills-btn">Javascript</a>
+          <a href="#" class="skills-btn">Pyhton</a>
+          <a href="#" class="skills-btn">Girişimcilik</a>
+          <a href="#" class="skills-btn">UI/UX</a>
+        </div>
+        <div class="profile-description">
+          <h2>Yabancı Diller</h2>
+          <a href="#" class="languange-btn">İngilizce</a>
+          <a href="#" class="languange-btn">Almanca</a>
+        </div>
+      </div>
+
+      <!--profile sidebar-->
+      <div class="profile-sidebar">
+        <div class="sidebar-ad">
+          <small>Ekle &middot; &middot; &middot; </small>
+          <p>Master the 5 priciple of web desing</p>
+          <div>
+            <img src="/images/user-1.png" alt="" />
+            <img src="/images/mi-logo.png" alt="" />
+          </div>
+          <b>Brand and Demand in Xiaomi</b>
+          <a href="#" class="ad-link">Daha Fazlası</a>
+        </div>
+
+        <div class="sidebar-people">
+          <h3>Tanıyor Olabileceğin Kişiler</h3>
+          <div class="sidebar-people-row">
+            <img src="/images/user-3.png" alt="" />
+            <div>
+              <h2>Samuel</h2>
+              <p>Head of Marketing at Alibaba</p>
+              <a href="#">Bağlantı Kur</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="/images/user-4.png" alt="" />
+            <div>
+              <h2>Benjamin</h2>
+              <p>Head of Marketing at Alibaba</p>
+              <a href="#">Bağlantı Kur</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="/images/user-5.png" alt="" />
+            <div>
+              <h2>Steave</h2>
+              <p>Head of Marketing at Alibaba</p>
+              <a href="#">Bağlantı Kur</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="/images/user-1.png" alt="" />
+            <div>
+              <h2>Martin</h2>
+              <p>Head of Marketing at Alibaba</p>
+              <a href="#">Bağlantı Kur</a>
+            </div>
+          </div>
+          <div class="sidebar-people-row">
+            <img src="/images/user-2.png" alt="" />
+            <div>
+              <h2>Clarence</h2>
+              <p>Head of Marketing at Alibaba</p>
+              <a href="#">Bağlantı Kur</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-footer">
+      <div class="sidebar-useful-links">
+        <a href="#">Hakkında</a>
+        <a href="#">Erişilebilirlik</a>
+        <a href="#">Yardım</a>
+        <a href="#">Gizlilik</a>
+        <a href="#">Reklam</a>
+        <a href="#">Ticari</a>
+        <a href="#">Daha Fazlası</a>
+
+        <div class="copyright-msg">
+          <img src="/images/logo.png" alt="" />
+          <p>LinkedIn Corporation &#169; 2023. All right reserved</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let profileMenu = document.getElementById("profileMenu");
+
+      function toggleMenu() {
+        profileMenu.classList.toggle("open-menu");
+      }
+    </script>
+  </body>
+</html>

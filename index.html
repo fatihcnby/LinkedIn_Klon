@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="/sytle.css">
+</head>
+<body>
+
+
+<!----Navbar---->
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="/index.html" class="logo"><img src="/images/logo.png"></a>
+            <div class="search-box">
+                <img src="/images/search.png" alt="">
+                <input type="text" placeholder="Arama Yap">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="/images/home.png"><span>Ana Sayfa</span></a></li>
+                <li><a href="#"><img src="/images/network.png"><span>Ağım</span></a></li>
+                <li><a href="#"><img src="/images/jobs.png"><span>İş İlanları</span></a></li>
+                <li><a href="#"><img src="/images/message.png"><span>Mesajlaşma</span></a></li>
+                <li><a href="#"><img src="/images/notification.png"><span>Bildirimler</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="/images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!--dropdown menü-->
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="/images/user-1.png" alt="">
+                    <div>
+                        <h3>Fatih Canbay</h3>
+                        <a href="profile.html">Profili Görüntüleyin</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="/images/feedback.png" alt="">
+                    <p>Geri Bildirimde Bulun</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="/images/setting.png" alt="">
+                    <p>Ayarlar</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="/images/help.png" alt="">
+                    <p>Yardım</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="/images/display.png" alt="">
+                    <p>Karanlık Mod</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="/images/logout.png" alt="">
+                    <p>Çıkış</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+    </nav>
+
+<!----Main Content---->
+
+<div class="container">
+    <!--left sidebar-->
+    <div class="left-sidebar">
+        <div class="sidebar-profile-box">
+            <img src="/images/cover-pic.png" width="100%">
+            <div class="sidebar-profile-info">
+                <img src="/images/user-1.png" alt="">
+                <h1>Fatih Canbay</h1>
+                <h3>React Developer - Frontend Developer</h3>
+                <ul>
+                    <li>Profili Görüntüleyenler <span>52</span></li>
+                    <li>Gönderi Gösterimi <span>102</span></li>
+                    <li>Your connections <span>74</span></li>
+                </ul>
+            </div>
+            <div class="sidebar-profile-link">
+                <a href="#"><img src="/images/premium.png">Premium</a>
+                <a href="#"><img src="/images/items.png">Öğelerim</a>
+            </div>
+        </div>
+        <div class="sidebar-activity" id="sidebarActivity">
+            <h3>EN YENİ</h3>
+            <a href="#"><img src="/images/recent.png" alt="">Web Development</a>
+            <a href="#"><img src="/images/recent.png" alt="">User Interface</a>
+            <a href="#"><img src="/images/recent.png" alt="">Online Learning</a>
+            <a href="#"><img src="/images/recent.png" alt="">Learn Online</a>
+            <a href="#"><img src="/images/recent.png" alt="">Code Better</a>
+            <a href="#"><img src="/images/recent.png" alt="">Group Learning</a>
+            <h3>GRUPLAR</h3>
+            <a href="#"><img src="/images/group.png" alt="">Web Design Group</a>
+            <a href="#"><img src="/images/group.png" alt="">HTML & CSS Learners</a>
+            <a href="#"><img src="/images/group.png" alt="">Python & Javascript Group</a>
+            <a href="#"><img src="/images/group.png" alt="">Learning Coding online</a>
+            <h3>ETKİNLİKLER</h3>
+            <a href="#"><img src="/images/hashtag.png" alt="">webdevelopment</a>
+            <a href="#"><img src="/images/hashtag.png" alt="">userinterface</a>
+            <a href="#"><img src="/images/hashtag.png" alt="">onlinelearning</a>
+            <div class="discover-more-link">
+                <a href="#">Daha Fazla Keşfet</a>
+            </div>   
+        </div>
+        <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+    </div>
+
+    <!--main content-->
+    <div class="main-content">
+        <div class="create-post">
+            <div class="create-post-input">
+               <img src="/images/user-1.png">
+               <textarea rows="2" placeholder="Write a Post"></textarea>
+            </div>
+            <div class="create-post-links">
+                <li><img src="/images/photo.png" alt="">Resim</li>
+                <li><img src="/images/video.png" alt="">Video</li>
+                <li><img src="/images/event.png" alt="">Etkinlik</li>
+                <li>Post</li>
+            </div>
+        </div>
+        <div class="sort-by">
+            <hr>
+            <p>Sıralama Ölçütü: <span>En Önemli <img src="/images/down-arrow.png" alt=""></span></p>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="/images/user-3.png" alt="">
+                <div>
+                    <h1>Benjamin L.</h1>
+                    <small>Founder and CEO UDEMİG</small>
+                    <small>2 saat önce</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem eum debitis facilis fugiat. Perferendis in atque officia aliquid explicabo.</p>
+            <img src="/images/post-image-1.png" alt="" width="100%">
+            <div class="post-stats">
+                <div>
+                    <img src="/images/thumbsup.png" alt="">
+                    <img src="/images/love.png" alt="">
+                    <img src="/images/clap.png" alt="">
+                    <span class="liked-users">Abhina Mishra ve 75 diğer kişi </span>
+                </div>
+                <div>
+                    <span>22 Yorum &middot; 40 Paylaşım </span>
+                </div>
+            </div> 
+
+            <div class="post-activity">
+                <div>
+                    <img src="/images/user-1.png" class="post-activity-user-icon">
+                    <img src="/images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/like.png" alt="">
+                    <span>Beğen</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/comment.png" alt="">
+                    <span>Yorum Yap</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/share.png" alt="">
+                    <span>Paylaş</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/send.png" alt="">
+                    <span>Gönder</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="/images/user-4.png" alt="">
+                <div>
+                    <h1>Clark Kent</h1>
+                    <small>Founder and CEO UDEMİG</small>
+                    <small>4 saat önce</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem eum debitis facilis fugiat. Perferendis in atque officia aliquid explicabo.</p>
+            <img src="/images/post-image-2.png" alt="" width="100%">
+            <div class="post-stats">
+                <div>
+                    <img src="/images/thumbsup.png" alt="">
+                    <img src="/images/love.png" alt="">
+                    <img src="/images/clap.png" alt="">
+                    <span class="liked-users">Abhina Mishra ve 75 diğer kişi</span>
+                </div>
+                <div>
+                    <span>22 Yorum &middot; 40 Paylaşım </span>
+                </div>
+            </div> 
+
+            <div class="post-activity">
+                <div>
+                    <img src="/images/user-1.png" class="post-activity-user-icon">
+                    <img src="/images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/like.png" alt="">
+                    <span>Beğen</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/comment.png" alt="">
+                    <span>Yorum Yap</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/share.png" alt="">
+                    <span>Paylaş</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/send.png" alt="">
+                    <span>Gönder</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="/images/user-5.png" alt="">
+                <div>
+                    <h1>Benjamin L.</h1>
+                    <small>Founder and CEO UDEMİG</small>
+                    <small>8 saat önce</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem eum debitis facilis fugiat. Perferendis in atque officia aliquid explicabo.</p>
+            <img src="/images/post-image-4.png" alt="" width="100%">
+            <div class="post-stats">
+                <div>
+                    <img src="/images/thumbsup.png" alt="">
+                    <img src="/images/love.png" alt="">
+                    <img src="/images/clap.png" alt="">
+                    <span class="liked-users">Abhina Mishra ve 75 diğer kişi</span>
+                </div>
+                <div>
+                    <span>45 Yorum &middot; 20 Paylaşım </span>
+                </div>
+            </div> 
+
+            <div class="post-activity">
+                <div>
+                    <img src="/images/user-1.png" class="post-activity-user-icon">
+                    <img src="/images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/like.png" alt="">
+                    <span>Beğen</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/comment.png" alt="">
+                    <span>Yorum Yap</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/share.png" alt="">
+                    <span>Paylaş</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/send.png" alt="">
+                    <span>Gönder</span>
+                </div>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                <img src="/images/user-2.png" alt="">
+                <div>
+                    <h1>Billy L.</h1>
+                    <small>Founder and CEO UDEMİG</small>
+                    <small>11 saat önce</small>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolorem eum debitis facilis fugiat. Perferendis in atque officia aliquid explicabo.</p>
+            <img src="/images/post-image-3.png" alt="" width="100%">
+            <div class="post-stats">
+                <div>
+                    <img src="/images/thumbsup.png" alt="">
+                    <img src="/images/love.png" alt="">
+                    <img src="/images/clap.png" alt="">
+                    <span class="liked-users">Abhina Mishra ve 30 diğer kişi</span>
+                </div>
+                <div>
+                    <span>22 Yorum &middot; 40 Paylaşım </span>
+                </div>
+            </div> 
+
+            <div class="post-activity">
+                <div>
+                    <img src="/images/user-1.png" class="post-activity-user-icon">
+                    <img src="/images/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/like.png" alt="">
+                    <span>Beğen</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/comment.png" alt="">
+                    <span>Yorum Yap</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/share.png" alt="">
+                    <span>Paylaş</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="/images/send.png" alt="">
+                    <span>Gönder</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <!--right sidebar-->
+    <div class="right-sidebar">
+        <div class="sidebar-news">
+            <img src="/images/more.png" class="info-icon">
+            <h1>Trending News</h1>
+            <a href="#">High demand for skilled manpower</a>
+            <span>1d ago &middot; 10,934 readers</span>
+
+            <a href="#">Careers growing horizontally too</a>
+            <span>19d ago &middot; 10,934 readers</span>
+
+            <a href="#">Less work visa for US, more for UK</a>
+            <span>1d ago &middot; 10,934 readers</span>
+
+            <a href="#">More hiring = higher confidence</a>
+            <span>1d ago &middot; 10,934 readers</span>
+
+            <a href="#">Gautam Adani is the world's third richest</a>
+            <span>12 h ago &middot; 10,934 readers</span>
+
+            <a href="#" class="read-more-link">Daha Fazlası</a>
+        </div>
+
+        <div class="sidebar-ad">
+            <small>Add &middot; &middot; &middot; </small>
+            <p>Master the 5 priciple of web desing</p>
+            <div>
+                <img src="/images/user-1.png" alt="">
+                <img src="/images/mi-logo.png" alt="">
+            </div>
+            <b>Brand and Demand in Xiaomi</b>
+            <a href="#" class="ad-link">Learn More</a>
+        </div>
+
+        <div class="sidebar-useful-links">
+            <a href="#">Hakkında</a>
+            <a href="#">Erişilebilirlik</a>
+            <a href="#">Yardım</a>
+            <a href="#">Gizlilik</a>
+            <a href="#">Reklam</a>
+            <a href="#">Ticari</a>
+            <a href="#">Daha Fazlası</a>
+
+            <div class="copyright-msg">
+                <img src="/images/logo.png" alt="">
+                <p>LinkedIn Corporation &#169; 2023. All right reserved</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    let profileMenu = document.getElementById("profileMenu");
+
+    function toggleMenu(){
+        profileMenu.classList.toggle("open-menu");
+    }
+
+</script>
+
+<script>
+
+    let sideActivity = document.getElementById("sidebarActivity");
+    let moreLink = document.getElementById("showMoreLink");
+
+    function toggleActivity(){
+        sideActivity.classList.toggle("open-activity");
+
+        if(sideActivity.classList.contains("open-activity")){
+            moreLink.innerHTML = "Show less <b>-</b>";
+        }
+        else{
+            moreLink.innerHTML = "Show more <b>+</b>";
+        }
+    }
+    
+
+</script>
+    
+</body>
+</html>
